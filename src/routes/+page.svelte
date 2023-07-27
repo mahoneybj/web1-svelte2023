@@ -1,10 +1,7 @@
-<h2>HTML practice</h2>
+<h1>DOGS</h1>
 <div></div>
 <ul>
-  <li>cat</li>
+  <li>Cool</li>
   <li>dog</li>
-  <li>fish</li>
-  <li>bird</li>
 </ul>
-<div><img src="https://www.bu.edu/files/2018/06/t-rex-DestinationDino1.jpg" width="500" /></div>
-<a href="https://op.ac.nz">Otago Polytechnic</a>
+<div><img src="https://hips.hearstapps.com/hmg-prod/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=1.00xw:0.756xh;0,0.0756xh&resize=1200:*" width="500" /></div>
