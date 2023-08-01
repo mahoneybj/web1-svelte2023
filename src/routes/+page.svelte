@@ -1,3 +1,15 @@
+<script>
+	let name = 'world';
+</script>
+
+<style>
+	h1 {
+		color: purple;
+		font-family: 'Comic Sans MS', cursive;
+		font-size: 2em;
+	}
+</style>
+
 <h1>DOGS</h1>
 <div></div>
 <ul>
