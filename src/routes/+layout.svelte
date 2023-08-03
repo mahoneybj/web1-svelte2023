@@ -10,7 +10,6 @@
 
 <Header/>
 <Nav />
-<h1>I am the layout file</h1>
 <slot />
 
 <Footer/>
