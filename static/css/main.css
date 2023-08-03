@@ -6,6 +6,7 @@
 
 	body {
 		margin-left: 200px;
+		margin-top: 150px;
 	  }
 
 	 nav {
@@ -21,4 +22,16 @@
 		color: #000000;
 		font-family: "Lato", sans-serif;
 		font-size: 1em;
+	  }
+
+	  header{
+		height: 100px;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #1affc6c4;
+		overflow-x: hidden;
+		padding-left: 150px;
 	  }
