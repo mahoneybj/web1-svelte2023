@@ -1,7 +1,8 @@
 <nav>
   <h3>Nav</h3>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="about">About</a></li>
-      </ul>
+
+        <a href="/" class="button">Home</a>
+        <a href="about" class="button">About</a>
+        <a href="contact" class="button">Contact</a>
+
 </nav>

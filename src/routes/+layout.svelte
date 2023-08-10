@@ -9,7 +9,9 @@
 </svelte:head>
 
 <Header/>
-<Nav />
-<slot />
+
+<main>
+  <slot />
+</main>
 
 <Footer/>
