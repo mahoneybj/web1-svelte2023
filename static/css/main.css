@@ -23,14 +23,13 @@
 	  header{
 		position: relative;
 		padding: 10px;
-		height: 50px;
+		height: 55px;
 		width: 100%;
 		z-index: 1;
 		top: 0;
 		left: 0;
 		background-color: #1affc6c4;
-		overflow-x: hidden;
-		transform: translateY(0px);
+		overflow-x:hidden;
 	  }
 
 	  
