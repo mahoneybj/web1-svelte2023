@@ -2,6 +2,7 @@
     import Header from "$lib/Header.svelte";
     import Footer from "$lib/Footer.svelte";
     import Nav from "$lib/Nav.svelte";
+  import FooterButton from "../lib/FooterButton.svelte";
   </script>
 
 <svelte:head>
@@ -14,4 +15,5 @@
   <slot />
 </main>
 
+<FooterButton/>
 <Footer/>

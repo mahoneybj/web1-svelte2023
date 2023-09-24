@@ -17,6 +17,7 @@
 	main{
 		margin-top: 0px;
 		padding-bottom: 100px;
+		background-color: #FF6969;
 		}
 
 
@@ -28,7 +29,7 @@
 		z-index: 1;
 		top: 0;
 		left: 0;
-		background-color: #1affc6;
+		background-color: #FFF5E0;
 		overflow-x:hidden;
 	  }
 
@@ -110,6 +111,14 @@
 	  .background h2{
 		font-family: "Lato", sans-serif;
 		font-size: 8em;
+	  }
+
+	  footer{
+		background-color: #141E46;
+	  }
+
+	  footerButton{
+		background-color: #C70039;
 	  }
 
 
