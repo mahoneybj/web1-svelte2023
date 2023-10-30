@@ -97,15 +97,13 @@
 
 	   .background{
 		width:100%;
-		height:600px;
+		height:300px;
 		background-image:url('https://hips.hearstapps.com/hmg-prod/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=1.00xw:0.756xh;0,0.0756xh&resize=1200:*');
 		background-size:100%;
 		background-attachment: fixed;
 		display:flex;
 		align-items:center;
 		justify-content:center;
-		
-		
 	  }
 
 	  .background h2{
@@ -119,6 +117,25 @@
 
 	  footerButton{
 		background-color: #C70039;
+	  }
+
+	  .card-row{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+
+	  .card {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+	  }
+	  
+	  .card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	  }
+	  
+	  .container {
+		padding: 2px 16px;
 	  }
 
 
