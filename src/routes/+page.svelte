@@ -3,9 +3,6 @@
   <h2>Dog</h2>
 </div>
 
-
-
-</div>
 </div>
 
 
