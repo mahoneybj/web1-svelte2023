@@ -15,5 +15,5 @@
   <slot />
 </main>
 
-<FooterButton/>
+<!-- <FooterButton/> -->
 <Footer/>
