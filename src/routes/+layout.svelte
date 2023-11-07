@@ -2,7 +2,8 @@
     import Header from "$lib/Header.svelte";
     import Footer from "$lib/Footer.svelte";
     import Nav from "$lib/Nav.svelte";
-  import FooterButton from "../lib/FooterButton.svelte";
+    import FooterButton from "../lib/FooterButton.svelte";
+    import DogFetch from "../lib/DogFetch.svelte";
   </script>
 
 <svelte:head>
