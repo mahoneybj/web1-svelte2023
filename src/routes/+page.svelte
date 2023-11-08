@@ -1,5 +1,6 @@
 <script>
   import { randomDog } from "$lib/index.js";
+    import DogFetch from "../lib/DogFetch.svelte";
 </script>
 
 <div class="Outer-box">
@@ -11,6 +12,7 @@
       <button class="random-dog" on:click={() => randomDog()}>Random Dog</button>
   </div>
 </div>
+<DogFetch/>
 </div>
 
 
