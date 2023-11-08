@@ -2,6 +2,7 @@
 import { onMount } from 'svelte';
 import { dogArray } from '$lib/index.js';
 
+let dogsFetched = false;
 
 onMount(async () => {
 
@@ -10,6 +11,7 @@ onMount(async () => {
       if (response.ok) {
         let data = await response.json(); 
         dogArray.set(data);
+        dogsFetched = true;
         console.log($dogArray);
       } else {
         throw new Error('Failed to fetch data');
@@ -23,15 +25,19 @@ onMount(async () => {
 </script>
 
 <div class="card-row">
-  {#each $dogArray.dogBreeds as breed}
-    <div class="card">
-      <div class="image">
-        <img src={breed.photo} alt="Dog Photo" style="width:100%">
+  {#if dogsFetched}
+    {#each $dogArray.dogBreeds as breed}
+      <div class="card">
+        <div class="image">
+          <img src={breed.photo} alt="Dog Photo" style="width:100%">
+        </div>
+        <div class="container">
+          <h4><b>{breed.breed}</b></h4>
+          <p>Temperament: {breed.temperament.join(', ')}</p>
+        </div>
       </div>
-      <div class="container">
-        <h4><b>{breed.breed}</b></h4>
-        <p>Temperament: {breed.temperament.join(', ')}</p>
-      </div>
-    </div>
-  {/each}
+    {/each}
+  {:else}
+    <p>Loading...</p>
+  {/if}
 </div>
