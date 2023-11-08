@@ -1,5 +1,5 @@
 <script>
-  import { } from '$lib/index.js';
+  import { randomDog } from "$lib/index.js";
 </script>
 
 <div class="Outer-box">

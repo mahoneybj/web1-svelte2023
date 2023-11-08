@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<link rel="stylesheet" href="css/main.css" />
+  <script type="module" href="$lib/index.js" preload></script>
 </svelte:head>
 
 <Header/>
