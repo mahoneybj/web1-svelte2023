@@ -16,6 +16,6 @@
 <main>
   <slot />
 </main>
-
+<DogFetch/>
 <!-- <FooterButton/> -->
 <Footer/>
