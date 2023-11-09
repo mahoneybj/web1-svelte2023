@@ -1,3 +1,0 @@
-<footerButton>
-    Hello
-</footerButton>
