@@ -1,15 +1,22 @@
 <script>
     import { dogArray } from '$lib/index.js';
+    import { onMount } from 'svelte';
 
-    function randomDog(){
+    let myrandDog;
+
+    function getRandomDog() {
         const randomIndex = Math.floor(Math.random() * $dogArray.dogBreeds.length);
         const rand = $dogArray.dogBreeds[randomIndex];
         return rand;
- }
+    }
 
 
-const myrandDog = randomDog();
-console.log(myrandDog);
+    myrandDog = getRandomDog();
+    console.log(myrandDog);
+
+
+
+
 
 </script>
 
