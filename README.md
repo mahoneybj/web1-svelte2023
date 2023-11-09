@@ -1,4 +1,4 @@
-# Dog Website
+# Dog breeds Website
 
 ## Description
 This is a website that displays a range of dogs with photos and infomation relating to each breed. The website also has a random dog function that displays a random dog breed.
