@@ -1,6 +1,6 @@
 <script>
 import { onMount } from 'svelte';
-import { dogArray } from '$lib/index.js';
+import { dogArray, dogImageLinks } from '$lib/index.js';
 
 let dogsFetched = false;
 let selectedBreed = null;
@@ -14,6 +14,9 @@ onMount(async () => {
         dogArray.set(data);
         dogsFetched = true;
         console.log($dogArray);
+        for(let i = 0; i < dogImageLinks.length; i++){
+          $dogArray.dogBreeds.photo.set(dogImageLinks[i]);
+        }
       } else {
         throw new Error('Failed to fetch data');
       }
@@ -32,6 +35,7 @@ onMount(async () => {
     selectedBreed = null;
   }
   
+
 
 </script>
 
