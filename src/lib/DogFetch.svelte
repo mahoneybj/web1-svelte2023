@@ -69,7 +69,7 @@
         <p>Hypoallergenic: {selectedBreed.hypoallergenic}</p>
         <p>Intelligence: {selectedBreed.intelligence}</p>
         <img src={selectedBreed.photo} alt="Dog Photo" style="width:100%" />
-        <button on:click={closeDetails}>Close Details</button>
+        <button class="closeButton" on:click={closeDetails}>Close Details</button>
         <!-- Close details button when clicked runs closeDetails() function resetting selectedBreed to null -->
       </div>
     </div>
