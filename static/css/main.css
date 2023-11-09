@@ -26,17 +26,13 @@
 
 	  header{
 		position: relative;
-		margin: 10px; 
-		height: 55px;
+		height: 80px;
 		width: 100%;
-		z-index: 1;
-		top: 0;
-		left: 0;
 		background-color: #FFF5E0;
 		overflow-x:hidden;
-		max-width: calc(100% - 20px);
 		font-family: 'Roboto', sans-serif;
-
+		display: flex;
+		align-items: center;
 	  }
 
 	  
