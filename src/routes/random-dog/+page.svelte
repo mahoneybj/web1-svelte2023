@@ -1,11 +1,19 @@
 <script>
-    import { randomDog } from '$lib/index.js';
-    import { onMount } from 'svelte/store';
+    import { dogArray } from '$lib/index.js';
 
-    let dog;
 
-    onMount(() => {
-        dog = randomDog();
-  });
+    let dogs = null;
+
+    function randomDog(){
+        const randomIndex = Math.floor(Math.random() * $dogArray.dogBreeds.length);
+        const rand = $dogArray.dogBreeds[randomIndex];
+        return rand;
+ }
+
+
+const myrandDog = randomDog();
+console.log(myrandDog);
+
 </script>
+
 

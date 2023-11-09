@@ -4,9 +4,10 @@ export const dogArray = writable([]);
 
 
 
- function randomDog(){
-    const randomIndex = Math.floor(Math.random() * dogs.length);
-    return dogArray[randomIndex];
- }
+function randomDog(){
+    console.log($dogArray.dogBreeds);
+    const randomIndex = Math.floor(Math.random() * $dogArray.dogBreeds.length);
+    const rand = $dogArray.dogBreeds[randomIndex];
+    return rand;
+}
 
- export {randomDog};

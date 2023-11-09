@@ -1,5 +1,4 @@
 <script>
-  import { randomDog } from "$lib/index.js";
     import DogFetch from "../lib/DogFetch.svelte";
 </script>
 
