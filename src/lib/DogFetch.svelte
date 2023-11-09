@@ -2,9 +2,11 @@
 import { onMount } from 'svelte';
 import { dogArray, dogImageLinks } from '$lib/index.js';
 
-let dogsFetched = false;
-let selectedBreed = null;
+let dogsFetched = false; //Allows dog cards to be printed to screen
+let selectedBreed = null; //Allows enlarged card to be shown on screen
 
+//OnMount async function that fetches json of dog breeds and infomation relating to them. If sucessful sets fetched data to dogArray, changes dogArray
+//photo link to that of dogImageLinks array.
 onMount(async () => {
 
     try {
@@ -29,11 +31,12 @@ onMount(async () => {
     }
   });
 
+  // Function that sets selectedBreed to passed breed
   function showDetails(breed) {
     selectedBreed = breed;
-    console.log(selectedBreed);
   }
 
+  // Function that resets selectedBreed to nill when called
   function closeDetails() {
     selectedBreed = null;
   }
@@ -43,8 +46,8 @@ onMount(async () => {
 </script>
 
 <div class="card-row">
-  {#if dogsFetched}
-    {#each $dogArray.dogBreeds as breed}
+   {#if dogsFetched} <!-- Runs when onMount async function sucessful -->
+    {#each $dogArray.dogBreeds as breed} <!-- For each loop going through dogArray -->
       <div class="card">
         <div class="image">
           <img src={breed.photo} alt="Dog Photo" style="width:100%">
@@ -53,14 +56,14 @@ onMount(async () => {
           <h4><b>{breed.breed}</b></h4>
           <p>Temperament: {breed.temperament.join(', ')}</p>
           <div class="more-button">
-            <button class="more-details" on:click={() => showDetails(breed)}>More Details</button>
+            <button class="more-details" on:click={() => showDetails(breed)}>More Details</button> <!-- More details button when clicked runs showDetails() function passing breed -->
           </div>
         </div>
       </div>
     {/each}
   {/if}
 
-  {#if selectedBreed != null}
+  {#if selectedBreed != null} <!-- Runs selectedBreed() has a valid breed -->
     <div class="modal">
       <div class="enlarge-card">
         <h4><b>{selectedBreed.breed}</b></h4>
@@ -70,7 +73,7 @@ onMount(async () => {
         <p>Hypoallergenic: {selectedBreed.hypoallergenic}</p>
         <p>Intelligence: {selectedBreed.intelligence}</p>
         <img src={selectedBreed.photo} alt="Dog Photo" style="width:100%">
-        <button on:click={closeDetails}>Close Details</button>
+        <button on:click={closeDetails}>Close Details</button> <!-- Close details button when clicked runs closeDetails() function resetting selectedBreed to null -->
       </div>
     </div>
   {/if}
