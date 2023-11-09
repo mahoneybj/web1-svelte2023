@@ -68,7 +68,9 @@
         <p>Temperament: {selectedBreed.temperament.join(", ")}</p>
         <p>Hypoallergenic: {selectedBreed.hypoallergenic}</p>
         <p>Intelligence: {selectedBreed.intelligence}</p>
-        <img src={selectedBreed.photo} alt="Dog Photo" style="width:100%" />
+        <div class="enlargeImage">
+          <img src={selectedBreed.photo} alt="Dog Photo" style="width:100%" />
+        </div>
         <button class="closeButton" on:click={closeDetails}>Close Details</button>
         <!-- Close details button when clicked runs closeDetails() function resetting selectedBreed to null -->
       </div>
