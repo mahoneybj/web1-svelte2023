@@ -1,7 +1,8 @@
 import { writable } from "svelte/store";
 
-export const dogArray = writable(["empty"]);
+export const dogArray = writable(["empty"]); // dogArray which uses sveltes writable and export function that allows the variable to be subcibed to and edited
 
+// Array of dog images to be added to dogArray as dogArray does not have valid images
 export const dogImageLinks = [
     "https://upload.wikimedia.org/wikipedia/commons/0/04/Labrador_Retriever_%281210559%29.jpg",
     "https://upload.wikimedia.org/wikipedia/commons/5/57/German_shepard_female.jpg",
