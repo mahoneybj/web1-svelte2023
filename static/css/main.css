@@ -19,6 +19,7 @@ header {
   overflow-x: hidden;
   display: flex;
   align-items: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* CSS for header nav button when clicked */
@@ -117,14 +118,17 @@ footer {
   overflow: hidden;
 }
 
+/* CSS for card when cursor hovers over (box shadow) */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* CSS that pads the cards out */
 .container {
   padding: 2px 16px;
 }
 
+/* CSS for translucint background when enlarge-card is displayed */
 .modal {
   position: fixed;
   z-index: 1;
@@ -136,6 +140,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* CSS for enlarged card/showDetails */
 .enlarge-card {
   background-color: #e9d4a6;
   margin: 15% auto;
@@ -144,60 +149,65 @@ footer {
   width: 80%;
 }
 
-h4, p{
-	display: flex;
-	justify-content: center;
+/* CSS for all h4 and p tags on the site */
+h4,
+p {
+  display: flex;
+  justify-content: center;
 }
 
+/* CSS for the close button in enlarge card */
 .closeButton {
-	appearance: button;
-	background-color: #e2a727;
-	border: solid transparent;
-	border-radius: 16px;
-	border-width: 0 0 4px;
-	box-sizing: border-box;
-	color: #FFFFFF;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 15px;
-	font-weight: 700;
-	letter-spacing: .8px;
-	line-height: 20px;
-	margin: 0;
-	outline: none;
-	overflow: visible;
-	padding: 13px 19px;
-	text-align: center;
-	text-transform: uppercase;
-	touch-action: manipulation;
-	transform: translateZ(0);
-	transition: filter .2s;
-	user-select: none;
-	-webkit-user-select: none;
-	vertical-align: middle;
-	white-space: nowrap;
-   }
-   
-   .closeButton:after {
-	background-clip: padding-box;
-	background-color: #f5c256;
-	border: solid transparent;
-	border-radius: 16px;
-	border-width: 0 0 4px;
-	bottom: -4px;
-	content: "";
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: -1;
-   }
-   
-   .closeButton:hover:not(:disabled) {
-	filter: brightness(1.1);
-   }
+  appearance: button;
+  background-color: #e2a727;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 19px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
+/* CSS for the close button in enlarge card when cursor is on it */
+.closeButton:after {
+  background-clip: padding-box;
+  background-color: #f5c256;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
 
+/* CSS for the close button in enlarge card when cursor is on it (Brightens button) */
+.closeButton:hover {
+  filter: brightness(1.1);
+}
+
+/* CSS for text in random dog page */
 .random-header {
   display: flex;
   align-items: center;
