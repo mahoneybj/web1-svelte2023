@@ -144,6 +144,11 @@ footer {
   width: 80%;
 }
 
+h4, p{
+	display: flex;
+	justify-content: center;
+}
+
 .close {
   color: #aaa;
   float: right;

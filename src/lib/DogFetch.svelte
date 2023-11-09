@@ -43,23 +43,16 @@
 </script>
 
 <div class="card-row">
-  {#if dogsFetched}
-    <!-- Runs when onMount async function sucessful -->
-    {#each $dogArray.dogBreeds as breed}
-      <!-- For each loop going through dogArray -->
-      <div class="card">
+  {#if dogsFetched} <!-- Runs when onMount async function sucessful -->
+    {#each $dogArray.dogBreeds as breed} <!-- For each loop going through dogArray -->
+      <div class="card" on:click={() => showDetails(breed)}> <!-- kn:click svelte function runs showDetails() when card is clicked -->
         <div class="image">
           <img src={breed.photo} alt="Dog Photo" style="width:100%" />
         </div>
         <div class="container">
           <h4><b>{breed.breed}</b></h4>
           <p>Temperament: {breed.temperament.join(", ")}</p>
-          <div class="more-button">
-            <button class="more-details" on:click={() => showDetails(breed)}
-              >More Details</button
-            >
-            <!-- More details button when clicked runs showDetails() function passing breed -->
-          </div>
+          <p>Click for more details!</p>
         </div>
       </div>
     {/each}
