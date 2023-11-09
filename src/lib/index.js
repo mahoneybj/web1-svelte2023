@@ -1,11 +1,5 @@
 import { writable } from "svelte/store";
 
-export const dogArray = writable([]);
+export const dogArray = writable(["empty"]);
 
 
-
- function randomDog(){
-
- }
-
- export {randomDog};
