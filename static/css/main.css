@@ -1,191 +1,178 @@
-	body {
-		margin: 0;
-		font-family: 'Roboto', sans-serif;
-		cursor: url(https://openmoji.org/data/color/svg/1F436.svg), auto;
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  cursor: url(https://openmoji.org/data/color/svg/1F436.svg), auto;
+}
 
-	}
+.main {
+  font-family: "Roboto", sans-serif;
+}
 
-	.main {
-		font-family: 'Roboto', sans-serif;
-	}
+.test h1 {
+  text-align: center;
+  color: purple;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+}
 
-	.test h1 {
-		text-align: center;
-		color: purple;
-		font-family: "Lato", sans-serif;
-		font-size: 2em;
-	}
+main {
+  margin-top: 0px;
+  padding-bottom: 50px;
+  background-color: #ff6969;
+  font-family: "Roboto", sans-serif;
+}
 
+header {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  background-color: #fff5e0;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+}
 
-	main{
-		margin-top: 0px;
-		padding-bottom: 50px;
-		background-color: #FF6969;
-		font-family: 'Roboto', sans-serif;
-		}
+.input-email {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
 
+.input-email:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
 
-	  header{
-		position: relative;
-		height: 80px;
-		width: 100%;
-		background-color: #FFF5E0;
-		overflow-x:hidden;
-		font-family: 'Roboto', sans-serif;
-		display: flex;
-		align-items: center;
-	  }
+.button:link,
+.button:visited {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  padding: 10px 30px;
+  border: 1px solid;
+  border-radius: 1000px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+}
 
-	  
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, 0.5);
+}
 
+.button:active {
+  transform: translateY(-3px);
+}
 
-	  .input-email {
-		padding: 10px;
-		border: 2px solid #ccc;
-		border-radius: 5px;
-		font-size: 16px;
-		color: #555;
-		outline: none;
-	  }
-	  
-	  .input-email:focus {
-		border-color: #007bff;
-		box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-	  }
+.button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+}
 
-	  .button:link,
-	  .button:visited {
-		margin-top: 5px;
-		margin-bottom: 5px;
-		margin-left: 5px;
-		text-transform: uppercase;
-		text-decoration: none;
-		color: rgb(27, 27, 27);
-		padding: 10px 30px;
-		border: 1px solid;
-		border-radius: 1000px;
-		display: inline-block;
-		transition: all .2s;
-		position: relative;
-	   }
+.button:active::after {
+  background-color: rgb(0, 238, 255);
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
 
-	   .button:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
-	   }
-	   
-	   .button:active {
-		transform: translateY(-3px);
+.background {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=1.00xw:0.756xh;0,0.0756xh&resize=1200:*");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-	   }
-	   
-	   .button::after {
-		content: "";
-		display: inline-block;
-		height: 100%;
-		width: 100%;
-		border-radius: 100px;
-		top: 0;
-		left: 0;
-		position: absolute;
-		z-index: -1;
-		transition: all .3s;
-	   }
-	   
-	   .button:active::after {
-		background-color: rgb(0, 238, 255);
-		transform: scaleX(1.4) scaleY(1.5);
-		opacity: 0;
-	   }
+.background h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 8em;
+}
 
-	   .background{
-		width: 100%;
-		height: 300px;
-		background-image: url('https://hips.hearstapps.com/hmg-prod/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=1.00xw:0.756xh;0,0.0756xh&resize=1200:*');
-		background-size: cover; 
-		background-attachment: fixed;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	  }
+footer {
+  background-color: #141e46;
+  color: white;
+}
 
-	  .background h2{
-		font-family: "Lato", sans-serif;
-		font-size: 8em;
-	  }
+footerButton {
+  background-color: #c70039;
+}
 
-	  footer{
-		background-color: #141E46;
-		color: white;
-	  }
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-	  footerButton{
-		background-color: #C70039;
-	  }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 30px;
+  max-width: 500px;
+}
 
-	  .card-row{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	  }
+.image {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
 
-	  .card {
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-		transition: 0.3s;
-		margin: 30px;
-		max-width: 500px;
-	  }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
-	  .image{
-		width: 100%; 
-		height: 100%; 
-		max-height: 300px;
-		overflow: hidden; 
-	  }
-	  
-	  .card:hover {
-		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	  }
-	  
-	  .container {
-		padding: 2px 16px;
-	  }
+.container {
+  padding: 2px 16px;
+}
 
 .modal {
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .enlarge-card {
-	background-color: #fefefe;
-	margin: 15% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-  }
-  
-  .close {
-	color: #aaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-  }
-  
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
-  .random-header{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: xx-large;
-  }
+.enlarge-card {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
 
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
-
-	  
-	  
+.random-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
