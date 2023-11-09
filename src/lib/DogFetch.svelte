@@ -14,9 +14,12 @@ onMount(async () => {
         dogArray.set(data);
         dogsFetched = true;
         console.log($dogArray);
-        for(let i = 0; i < dogImageLinks.length; i++){
-          $dogArray.dogBreeds.photo.set(dogImageLinks[i]);
-        }
+        for (let i = 0; i < dogImageLinks.length; i++) {
+          dogArray.update(arr => {
+          arr.dogBreeds[i].photo = dogImageLinks[i];
+          return arr;
+        });
+      }
       } else {
         throw new Error('Failed to fetch data');
       }
