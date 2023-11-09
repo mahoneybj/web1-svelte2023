@@ -1,10 +1,10 @@
 	body {
 		margin: 0;
+		font-family: 'Roboto', sans-serif;
 	}
 
 	.main {
-		font-family: "Lato", sans-serif;
-		
+		font-family: 'Roboto', sans-serif;
 	}
 
 	.test h1 {
@@ -19,7 +19,8 @@
 		margin-top: 0px;
 		padding-bottom: 50px;
 		background-color: #FF6969;
-		
+		font-family: 'Roboto', sans-serif;
+
 		}
 
 
@@ -34,6 +35,8 @@
 		background-color: #FFF5E0;
 		overflow-x:hidden;
 		max-width: calc(100% - 20px);
+		font-family: 'Roboto', sans-serif;
+
 	  }
 
 	  
@@ -182,6 +185,13 @@
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
+  }
+
+  .random-header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: xx-large;
   }
 
 
