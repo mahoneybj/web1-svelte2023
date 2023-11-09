@@ -1,25 +1,13 @@
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  cursor: url(https://openmoji.org/data/color/svg/1F436.svg), auto;
-}
-
-.main {
-  font-family: "Roboto", sans-serif;
-}
-
-.test h1 {
-  text-align: center;
-  color: purple;
-  font-family: "Lato", sans-serif;
-  font-size: 2em;
+  font-family: "Roboto", sans-serif; /* Changes all fonts to googles Roboto font */
+  cursor: url(https://openmoji.org/data/color/svg/1F436.svg), auto; /* Changes cursor to openemoji dog emoji */
 }
 
 main {
   margin-top: 0px;
   padding-bottom: 50px;
   background-color: #ff6969;
-  font-family: "Roboto", sans-serif;
 }
 
 header {
