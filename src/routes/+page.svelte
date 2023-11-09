@@ -1,5 +1,5 @@
 <script>
-    import DogFetch from "../lib/DogFetch.svelte";
+    import DogCards from "../lib/DogFetch.svelte";
 </script>
 
 <div class="Outer-box">
@@ -9,7 +9,7 @@
 <div class="random-button-area">
 
 </div>
-<DogFetch/>
+<DogCards/>
 </div>
 
 

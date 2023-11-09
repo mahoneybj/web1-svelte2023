@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </svelte:head>
-
+<DogFetch/>
 <Header/>
 
 <main>

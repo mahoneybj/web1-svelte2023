@@ -1,6 +1,7 @@
 import { writable } from "svelte/store";
 
 export const dogArray = writable(["empty"]);
+export const dogFetched = writable(false);
 
 export const dogImageLinks = [
     "https://upload.wikimedia.org/wikipedia/commons/0/04/Labrador_Retriever_%281210559%29.jpg",
