@@ -1,3 +1,3 @@
 <footer>
-    Hello I am a footer!
+    Page written by Ben Mahoney
 </footer>
