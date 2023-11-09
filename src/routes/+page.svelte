@@ -1,3 +1,4 @@
+<!-- Home page -->
 <script>
     import DogFetch from "../lib/DogFetch.svelte";
 </script>
@@ -8,7 +9,7 @@
 </div>
 </div>
 <div>
-<DogFetch/>
+<DogFetch/> <!-- Displays DogFetch componant -->
 </div>
 
 

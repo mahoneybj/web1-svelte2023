@@ -1,3 +1,4 @@
+<!-- Random dog page -->
 <script>
     import { dogArray } from '$lib/index.js';
 
