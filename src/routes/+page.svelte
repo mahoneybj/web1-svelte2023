@@ -5,7 +5,9 @@
 
 <div class="Outer-box">
   <div class="background">
-    <h2>Dog</h2>
+    <div class="title">
+      <h2>Dog breeds</h2>
+    </div>
   </div>
 </div>
 <div>
