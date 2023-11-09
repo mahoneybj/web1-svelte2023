@@ -6,9 +6,8 @@
 <div class="background">
   <h2>Dog</h2>
 </div>
-<div class="random-button-area">
-
 </div>
+<div>
 <DogFetch/>
 </div>
 
