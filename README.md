@@ -1,38 +1,19 @@
-# create-svelte
+# Dog Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Description
+This is a website that displays a range of dogs with photos and infomation relating to each breed. The website also has a random dog function that displays a random dog breed.
 
-## Creating a project
+## Technologies used
+This website uses sveltes onMound async function to fetch a json of dogs breeds and infomation. The async function utlizes try catch functions to avoid crashable errors. The website uses sveltes `on:click` function to run certain functions, svelte html if and for each loops to run through arrays. The website ustlizes svelte stores and exports datafields to be used on other pages. The random dog page utlizes javascripts math class to generate random numbers.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Known bugs
+### Crashing when reloading random dog page
+A major known bug occurs when a user reloads the random dog page. This occurs because the `dogArray` is initalized in the `DogFetch.svelte` componant. As the svelte store is reset and not `dogArray` is not reinitlized a error 500 occurs. 
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Future roadmap
+Add spinning wheel to random dog.
+Add confetti to winning wheel spin
+Add more animations to site
+Add dog cursor
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Screenshots
