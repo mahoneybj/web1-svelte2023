@@ -17,3 +17,8 @@ Add more animations to site
 Add dog cursor
 
 ## Screenshots
+![image](https://github.com/mahoneybj/web1-svelte2023/assets/65274137/69e3b37b-3714-42af-9963-fc24fa975064)
+![image](https://github.com/mahoneybj/web1-svelte2023/assets/65274137/9faee48d-234c-4bc7-bd07-3d2823c55413)
+![image](https://github.com/mahoneybj/web1-svelte2023/assets/65274137/aefae036-3346-4553-a3a6-5ecb9399eb5b)
+
+
