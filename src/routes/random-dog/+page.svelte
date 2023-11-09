@@ -1,23 +1,16 @@
 <script>
     import { dogArray } from '$lib/index.js';
-    import { onMount } from 'svelte';
 
     let myrandDog;
 
+    // getRandomDog() function generates a random number from 0 - dogArray length and returns a random dog breed
     function getRandomDog() {
         const randomIndex = Math.floor(Math.random() * $dogArray.dogBreeds.length);
         const rand = $dogArray.dogBreeds[randomIndex];
         return rand;
     }
-
-
+    // Calls getRandomDog() function and asigns its returned value to myrandDog variable
     myrandDog = getRandomDog();
-    console.log(myrandDog);
-
-
-
-
-
 </script>
 
 <div class="random-header">
