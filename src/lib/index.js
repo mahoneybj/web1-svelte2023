@@ -5,7 +5,7 @@ export const dogArray = writable([]);
 
 
  function randomDog(){
-
+    
  }
 
  export {randomDog};
