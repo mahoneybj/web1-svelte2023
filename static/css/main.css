@@ -1,6 +1,8 @@
 	body {
 		margin: 0;
 		font-family: 'Roboto', sans-serif;
+		cursor: url(https://openmoji.org/data/color/svg/1F436.svg), auto;
+
 	}
 
 	.main {
@@ -20,7 +22,6 @@
 		padding-bottom: 50px;
 		background-color: #FF6969;
 		font-family: 'Roboto', sans-serif;
-
 		}
 
 
